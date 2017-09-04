@@ -1,0 +1,147 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+     .main{
+     	border-style: groove;
+     	width:100%;
+     	height:100%;
+     }
+     .box{
+     	width: 18%;
+     	height: 20%;
+     	float: left;
+     }
+     #box1{
+     	margin-top: 15%;
+     	margin-left: 15%;
+     	background-color: black;
+     	cursor: pointer;
+     }
+     #box2{
+     	margin-top: 15%;
+     	margin-left: 5%;
+     	background-color: black;
+     	cursor: pointer;
+     }
+     #box3{
+     	margin-top: 15%;
+     	margin-left: 5%;
+     	background-color: black;
+     	cursor: pointer;
+     }
+     #textBox{
+     	font-size: 20px;
+     }
+    
+     .one{
+     	width: 100%;
+     	height: 33%;
+     	background-color: red;
+     }
+     .two{
+     	width: 100%;
+     	height: 33%;
+     	background-color: blue;
+     }
+     .three{
+     	width: 100%;
+     	height: 33%;
+     	background-color: orange;
+     }
+     .four{
+     	width: 33%;
+     	height: 100%;
+     	background-color: black;
+     	float: left;
+     }
+     .five{
+     	width: 33%;
+     	height: 100%;
+     	background-color: yellow;
+     	float: left;
+     }
+     .six{
+     	width: 33%;
+     	height: 100%;
+     	background-color: red;
+     	float: left;
+     }
+     .seven{
+     	width: 100%;
+     	height: 100%;
+     	background-color: green;
+     	float: left;
+     
+     }
+     .eight{
+     	width: 50%;
+     	height: 60%;
+       
+     	background-color: red;
+     	border-radius: 900%;
+     	margin-top: 30px;
+     	margin-left: 60px;
+
+     }
+	</style>
+</head>
+<body>
+  <div class="main">
+	  <div class="box" id="box1">
+	  	<div class="one"></div>
+	  	<div class="two"></div>
+	  	<div class="three"></div>
+	  	<center><input type="text" id="textBox1"></center>
+	  </div>
+	  <div class="box" id="box2">
+	  	<div class="four"></div>
+	  	<div class="five"></div>
+	  	<div class="six"></div>
+	  	<center><input type="text" id="textBox2"></center>
+	  </div>
+	  <div class="box" id="box3">
+	  	<div class="seven">
+	  	<div class="eight"></div>
+	  	</div>
+	  	<center><input type="text" id="textBox3"></center>
+	  </div>
+  </div>
+  <script type="text/javascript">
+  	var firstFlagDiv=document.getElementById('box1');
+    var secondFlagDiv=document.getElementById('box2');
+    var thirdFlagDiv=document.getElementById('box3');
+    firstFlagDiv.onmouseover=function()
+      {
+        var textBox1=document.getElementById('textBox1');
+        textBox1.value="Armenia";
+      }
+    firstFlagDiv.onmouseout=function(){
+        var textBox1=document.getElementById('textBox1');
+        textBox1.value="";
+    }
+    secondFlagDiv.onmouseover=function()
+      {
+        var textBox2=document.getElementById('textBox2');
+        textBox2.value="Belgium";
+      }
+    secondFlagDiv.onmouseout=function(){
+        var textBox2=document.getElementById('textBox2');
+        textBox2.value="";
+    }
+    thirdFlagDiv.onmouseover=function()
+      {
+        var textBox3=document.getElementById('textBox3');
+        textBox3.value="Bangladesh";
+      }
+    thirdFlagDiv.onmouseout=function(){
+        var textBox3=document.getElementById('textBox3');
+        textBox3.value="";
+    }
+//armenia
+//belgium
+//bangladesh
+
+  </script>
+</body>
+</html>
